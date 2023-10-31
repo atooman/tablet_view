@@ -1,0 +1,248 @@
+/* GENERAL CSS */
+html{
+    background-color: #FFF4EF;
+    color: #5E4A4E;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+h1{
+    font-size: 7vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
+
+h2{
+    font-size: 8vw; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1C2239;
+}
+
+h3{
+    font-size: 6vw; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #363F5E;
+    margin-bottom: 3%;
+    margin-top: 4%;
+}
+
+p{
+    line-height: 1.5;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+/* Custom for mobile */
+nav {
+    margin-top: 7%;
+}
+
+#pet_link, #recipes_link, #travel_link{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.primary_image{
+    padding-top: 6%;
+    padding-bottom: 3%;
+    margin-top: 0%;
+}
+
+.pet_list{
+    padding-bottom: 15%;
+}
+
+.location_container{
+    padding-bottom: 15%
+}
+
+a.skip{
+    position: absolute;
+    top: -200px; 
+    -webkit-transition: top 1s ease-in;
+    transition: right 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus {
+    top: 20px; 
+    left: 10px;
+}
+
+.chef{
+    transform: rotate(0deg);
+}
+
+#chef{
+    transform: rotate(0deg);
+}
+
+
+@keyframes example {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.paw{
+    border: none;
+    position: absolute;
+    transform: rotate(90deg);
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 7%;
+}
+
+.gif {
+    display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .paw { animation: none; }
+    .gif { display: none; }
+}
+
+li{
+    display: inline-block;
+    margin-left: 4%;
+    line-height: 1.5;
+}
+
+.p_two{
+    margin-top: 0%;
+}
+
+
+
+/*  WEB DESIGN PROJECT CSS */
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 7vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    p{
+        line-height: 2;
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    
+    h2{
+        font-size: 4vw; 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #1C2239;
+    }
+    
+    h3{
+        font-size: 2vw; 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #363F5E;
+    }
+    
+    /* Custom for mobile */
+    
+    li{
+        display: inline-block;
+        margin-left: 50px;
+    }
+
+    img{
+        border: 5px solid #363F5E;
+        padding: 10px;
+        margin: 20px;
+        border-top-right-radius: 30px;
+    }
+
+    .photo_grid{
+        display: grid;
+        gap: 10px;
+    }
+
+    .description_container{
+        display: grid;
+        gap: 5%;
+    }
+
+    .primary_image{
+        grid-column: 1/3;
+        grid-row: 1/3;
+        margin-top: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p_one{
+        grid-column: 3/4;
+        padding-top: 10%;
+        grid-row: 1/2;
+        padding-right: 4%;
+    }
+
+    .p_two{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        padding-right: 4%;
+    }
+
+    .photo_grid{
+        display: grid;
+    }
+
+    .image_one{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .image_two{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .image_three{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .image_four{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    h3{
+        font-size: 2vw; 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #363F5E;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    html{
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .pet_list{
+        padding-bottom: 5%;
+    }
+
+   
+
+
+    
+}
