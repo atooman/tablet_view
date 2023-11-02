@@ -25,7 +25,54 @@
         <br>
         <br>
         <h1>Pets</h1>
-        <div>
+        <div id="button_container">
+            <button onclick="show_dogs()" id="dog_button">Dogs</button>
+            <button onclick="show_cats()" id="cat_button">Cats</button>
+            <button onclick="show_all()" id="all_button">All</button>
+        </div>
+        <script>
+            function show_dogs() {
+                document.getElementById('dog1').style.display = "block";
+                document.getElementById('dog2').style.display = "block";
+                document.getElementById('dog3').style.display = "block";
+                document.getElementById('dog4').style.display = "block";
+                document.getElementById('dog5').style.display = "block";
+                document.getElementById('dog_button').style.backgroundColor = "#182351";
+                document.getElementById('cat1').style.display = "none";
+                document.getElementById('cat2').style.display = "none";
+                document.getElementById('cat_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_cats() {
+                document.getElementById('dog1').style.display = "none";
+                document.getElementById('dog2').style.display = "none";
+                document.getElementById('dog3').style.display = "none";
+                document.getElementById('dog4').style.display = "none";
+                document.getElementById('dog5').style.display = "none";
+                document.getElementById('dog_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('cat1').style.display = "block";
+                document.getElementById('cat2').style.display = "block";
+                document.getElementById('cat_button').style.backgroundColor = "#182351";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_all() {
+                document.getElementById('dog1').style.display = "block";
+                document.getElementById('dog2').style.display = "block";
+                document.getElementById('dog3').style.display = "block";
+                document.getElementById('dog4').style.display = "block";
+                document.getElementById('dog5').style.display = "block";
+                document.getElementById('dog_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('cat1').style.display = "block";
+                document.getElementById('cat2').style.display = "block";
+                document.getElementById('cat_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#182351";
+
+            }
+
+        </script>
+        <div id="dog1">
             <h2>Honey</h2>
             <div class="description_container">
                 <img class="primary_image" width="400" src="images/honey_main.jpeg" alt="Honey is a medium-sized golden retriever">
@@ -48,7 +95,7 @@
             <!-- Abbie Tooman -->
         </div>
         <!-- Pet #2 -->
-        <div>
+        <div id="cat1">
             <h2>Milktea</h2>
             <div class="description_container">
                 <img class="primary_image" width="400" src="images/main.jpg" alt="Milktea taking nap">
@@ -71,7 +118,7 @@
             <!-- Olivia Ren -->
         </div>
         <!-- Pet 3 -->
-        <div>
+        <div id="dog2">
             <h2>Bo</h2>
             <div class="description_container">
                 <img class="primary_image" width="400" src="images/bo.jpg" alt="Black and white dog sitting on grass.">
@@ -95,7 +142,7 @@
             <!-- Joseph Schaubroeck -->
         </div>
         <!-- Pet 4 -->
-        <div>
+        <div id="cat2">
             <h2>Chunky Doll (Chonks)</h2>
             <div class="description_container">
                 <img class="primary_image" width="400" src="images/chonks.png" alt="Furry white and dark brown ragdoll.">
@@ -118,7 +165,7 @@
             <!-- Syeda Shahriah -->
         </div>
          <!-- Pet 5 -->
-         <div>
+         <div id="dog3">
             <h2>Maui</h2>
             <div class="description_container">
                 <img class="primary_image" width="400" src="images/maui.jpeg" alt="He is a mini doodle with brown/blond hair">
@@ -141,7 +188,7 @@
             <!-- Antonio Lieghio -->
         </div>
          <!-- Pet 6 -->
-         <div>
+         <div id="dog4">
             <h2>Basil</h2>
             <div class="description_container">
                 <img class="primary_image" width="400" src="images/gurl_who_u_looking_at.png" alt="Fluffy white dog with paw on knee, begging for attention and giving you the side eye">
@@ -165,7 +212,7 @@
         </div>
 
          <!-- Pet 7 -->
-         <div>
+         <div id="dog5">
             <h2>Mocha</h2>
             <div class="description_container">
                 <img class="primary_image" width="400" src="images/mocha.png" alt="Mocha in spicy red training suit laying down">

@@ -6,6 +6,24 @@ html{
     padding-left: 2%;
 }
 
+#all_button{
+    background-color:#182351
+}
+
+button{
+    padding: 1.5%; 
+    background-color: #5E4A4E;
+    color: white;
+    border-radius: 10%;
+    margin-bottom: 3%;
+}
+
+#button_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
 #airplane_image{
     transform: rotate(10deg);
 }

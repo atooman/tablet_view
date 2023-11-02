@@ -19,13 +19,67 @@
     </nav>
 
     <main id="main">
-        <img class="paw" id="chef" width="50" src="images/chef_hat.png" alt="chef hat">
+        <img class="paw" id="chef" width="50" src="images/cooking.png" alt="chef hat">
         <br>
         <br>
         <br>
         <h1>Recipes</h1>
         <!-- Recipe #1 -->
-        <div>
+        <div id="button_container">
+            <button onclick="show_shrimp()" id="shrimp_button">Shrimp Scampi</button>
+            <button onclick="show_sushi()" id="sushi_button">Sushi Bake</button>
+            <button onclick="show_pancakes()" id="pancake_button">Dutch Baby Pancake</button>
+            <button onclick="show_all()" id="all_button">All</button>
+        </div>
+        <script>
+            function show_shrimp() {
+                // Show shrimp and hide the others
+                document.getElementById('shrimp').style.display = "block";
+                document.getElementById('shrimp_button').style.backgroundColor = "#182351";
+                document.getElementById('sushi').style.display = "none";
+                document.getElementById('pancake').style.display = "none";
+                document.getElementById('sushi_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('pancake_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_sushi() {
+                // Show shrimp and hide the others
+                document.getElementById('shrimp').style.display = "none";
+                document.getElementById('shrimp_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('sushi').style.display = "block";
+                document.getElementById('pancake').style.display = "none";
+                document.getElementById('sushi_button').style.backgroundColor = "#182351";
+                document.getElementById('pancake_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_pancakes() {
+                // Show shrimp and hide the others
+                document.getElementById('shrimp').style.display = "none";
+                document.getElementById('shrimp_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('sushi').style.display = "none";
+                document.getElementById('pancake').style.display = "block";
+                document.getElementById('sushi_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('pancake_button').style.backgroundColor = "#182351";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_all() {
+                // Show shrimp and hide the others
+                document.getElementById('shrimp').style.display = "block";
+                document.getElementById('shrimp_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('sushi').style.display = "block";
+                document.getElementById('pancake').style.display = "block";
+                document.getElementById('sushi_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('pancake_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#182351";
+
+            }
+
+        </script>
+
+        <div id="shrimp">
             <h2>Shrimp Scampi</h2>
             <span>Origin: Italian</span>
             <span>Source: NYTimes</span>
@@ -76,7 +130,7 @@
             
         </div>
         <!-- Recipe #2 -->
-        <div>
+        <div id="sushi">
             <h2>Sushi Bake</h2>
             <span>Origin: Asian</span>
             <span>Source: Own Recipe</span>
@@ -123,7 +177,7 @@
             <!-- Ethan Tai and Joshua Vijayasegar -->
         </div>
         <!-- Recipe #3 -->
-        <div>
+        <div id="pancake">
             <h2>Dutch Baby Pancake</h2>
             <span>Origin: Washington</span>
             <span>Source: Own Recipe</span>

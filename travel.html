@@ -24,7 +24,82 @@
         <br>
         <br>
         <h1>Travel</h1>
-        <div class="location_container">
+        <div id="button_container">
+            <button onclick="show_prague()" id="prague_button">Prague</button>
+            <button onclick="show_switzerland()" id="switzerland_button">Switzerland</button>
+            <button onclick="show_rocks()" id="rocks_button">Pictured Rocks</button>
+            <button onclick="show_vietname()" id="vietname_button">Vietname</button>
+            <button onclick="show_all()" id="all_button">All</button>
+        </div>
+        <script>
+            function show_prague() {
+                // Show shrimp and hide the others
+                document.getElementById('prague').style.display = "block";
+                document.getElementById('prague_button').style.backgroundColor = "#182351";
+                document.getElementById('switzerland').style.display = "none";
+                document.getElementById('switzerland_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('rocks').style.display = "none";
+                document.getElementById('rocks_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('vietname').style.display = "none";
+                document.getElementById('vietname_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_switzerland() {
+                // Show shrimp and hide the others
+                document.getElementById('prague').style.display = "none";
+                document.getElementById('prague_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('switzerland').style.display = "block";
+                document.getElementById('switzerland_button').style.backgroundColor = "#182351";
+                document.getElementById('rocks').style.display = "none";
+                document.getElementById('rocks_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('vietname').style.display = "none";
+                document.getElementById('vietname_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_rocks() {
+                // Show shrimp and hide the others
+                document.getElementById('prague').style.display = "none";
+                document.getElementById('prague_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('switzerland').style.display = "none";
+                document.getElementById('switzerland_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('rocks').style.display = "block";
+                document.getElementById('rocks_button').style.backgroundColor = "#182351";
+                document.getElementById('vietname').style.display = "none";
+                document.getElementById('vietname_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_vietname() {
+                // Show shrimp and hide the others
+                document.getElementById('prague').style.display = "none";
+                document.getElementById('prague_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('switzerland').style.display = "none";
+                document.getElementById('switzerland_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('rocks').style.display = "none";
+                document.getElementById('rocks_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('vietname').style.display = "block";
+                document.getElementById('vietname_button').style.backgroundColor = "#182351";
+                document.getElementById('all_button').style.backgroundColor = "#5E4A4E";
+            }
+
+            function show_all() {
+                // Show shrimp and hide the others
+                document.getElementById('prague').style.display = "block";
+                document.getElementById('prague_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('switzerland').style.display = "block";
+                document.getElementById('rocks').style.display = "block";
+                document.getElementById('vietname').style.display = "block";
+                document.getElementById('switzerland_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('rocks_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('vietname_button').style.backgroundColor = "#5E4A4E";
+                document.getElementById('all_button').style.backgroundColor = "#182351";
+
+            }
+
+        </script>
+        <div class="location_container" id="prague">
             <h2>Prague</h2>
 
             <div class="description_container">
@@ -63,7 +138,7 @@
         </div>
 
         <!-- Location 2 -->
-        <div class="location_container">
+        <div class="location_container" id="switzerland">
             <h2>Ebenalp Mountain, Switzerland</h2>
 
             <img class="gif" src="images/ebenalp_seealpsee_lake.jpeg" alt ="ebenalp_sunrise.gif" width="400">
@@ -112,7 +187,7 @@
             <!-- Elijah Cantu -->
         </div>
         <!-- Location 3 -->
-        <div class="location_container">
+        <div class="location_container" id="rocks">
             <h2>Pictured Rocks National Lakeshore</h2>
 
             <img src="images/pictured_rocks.jpeg" alt ="Geographical Location: North America" width="400">
@@ -161,7 +236,7 @@
             <!-- Ellie Irwin -->
         </div>
         <!-- Location 4 -->
-        <div class="location_container">
+        <div class="location_container" id="vietname">
             <h2>Ha Long Bay, Vietnam</h2>
 
             <img src="images/Halong_Bay.jpeg" alt ="Geographical Location: Asia" width="400">
