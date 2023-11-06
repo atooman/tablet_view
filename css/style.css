@@ -154,8 +154,19 @@ li{
         font-size: 4vw;
     }
 
+    .primary_image:hover, .primary_image:focus {
+        transform: scale(2); 
+        position: relative;
+        left: 65%;
+    }
+
     h3{
         font-size: 3vw;
+    }
+
+    nav {
+        position: sticky;
+        top: 0px;
     }
     
     li.recipe_list{
@@ -188,6 +199,8 @@ li{
         width: 90%;
         grid-row: 1/5;
         margin-top: 10%;
+        transform: none;
+        left: auto;
     }
 
     .recipe_one{
